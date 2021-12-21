@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Direnç Hesaplama</title>
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Direnç Hesaplama</h1>
+            <div class="input-container">
+                <div class="area">
+                    <span>1. RENK</span>
+                    <select id="color-1">
+                        <option value="0">(0) Siyah</option>
+                        <option value="1">(1) Kahverengi</option>
+                        <option selected value="2">(2) Kırmızı</option>
+                        <option value="3">(3) Turuncu</option>
+                        <option value="4">(4) Sarı</option>
+                        <option value="5">(5) Yeşil</option>
+                        <option value="6">(6) Mavi</option>
+                        <option value="7">(7) Mor</option>
+                        <option value="8">(8) Gri</option>
+                        <option value="9">(9) Beyaz</option>
+                    </select>
+                </div>
+
+                
+                <div class="area">
+                    <span>2. RENK</span>
+                    <select id="color-2">
+                        <option value="0">(0) Siyah</option>
+                        <option value="1">(1) Kahverengi</option>
+                        <option selected value="2">(2) Kırmızı</option>
+                        <option value="3">(3) Turuncu</option>
+                        <option value="4">(4) Sarı</option>
+                        <option value="5">(5) Yeşil</option>
+                        <option value="6">(6) Mavi</option>
+                        <option value="7">(7) Mor</option>
+                        <option value="8">(8) Gri</option>
+                        <option value="9">(9) Beyaz</option>
+                    </select>
+                </div>
+
+                
+                <div class="area">
+                    <span>3. RENK</span>
+                    <select id="color-3">
+                        <option selected value="-1">Yok</option>
+                        <option value="0">(0) Siyah</option>
+                        <option value="1">(1) Kahverengi</option>
+                        <option value="2">(2) Kırmızı</option>
+                        <option value="3">(3) Turuncu</option>
+                        <option value="4">(4) Sarı</option>
+                        <option value="5">(5) Yeşil</option>
+                        <option value="6">(6) Mavi</option>
+                        <option value="7">(7) Mor</option>
+                        <option value="8">(8) Gri</option>
+                        <option value="9">(9) Beyaz</option>
+                    </select>
+                </div>
+
+                
+                <div class="area">
+                    <span>ÇARPAN</span>
+                    <select id="multiplier">
+                        <option value="0">(0.01) Silver</option>
+                        <option value="1">(0.1) Gold</option>
+                        <option selected value="2">(1) Siyah</option>
+                        <option value="3">(10) Kahverengi</option>
+                        <option value="4">(100) Kırmızı</option>
+                        <option value="5">(1K) Turuncu</option>
+                        <option value="6">(10K) Sarı</option>
+                        <option value="7">(100K) Yeşil</option>
+                        <option value="8">(1M) Mavi</option>
+                        <option value="9">(10M) Mor</option>
+                    </select>
+                </div>
+
+                
+                <div class="area">
+                    <span>TOLERANS</span>
+                    <select id="tolerance">
+                        <option value="0">(10) Silver</option>
+                        <option value="1">(5) Gold</option>
+                        <option selected value="2">(1) Siyah</option>
+                        <option value="3">(2) Kahverengi</option>
+                        <option value="4">(0.5) Kırmızı</option>
+                        <option value="5">(0.25) Turuncu</option>
+                        <option value="6">(0.1) Sarı</option>
+                    </select>
+                </div>
+
+                
+                <div class="area">
+                    <span id="temprature-text">ISI KORUMASI</span>
+                    <select id="temprature">
+                        <option value="-1">Yok</option>
+                        <option selected value="1">(100) Kahverengi</option>
+                        <option value="2">(50) Kırmızı</option>
+                        <option value="3">(15) Turuncu</option>
+                        <option value="4">(25) Sarı</option>
+                    </select>
+                </div>
+
+                <!-- <input id="color-1" type="text"    placeholder="1. Renk" value="2"/>
+                <input id="color-2" type="text"    placeholder="2. Renk" value="3"/>
+                <input id="color-3" type="text"    placeholder="3. Renk" value=""/>
+                <input id="multiplier" type="text" placeholder="Çarpan"  value="2"/>
+                <input id="tolerance" type="text"  placeholder="Tolerans" value="1"/>
+                <input id="temprature" type="text" placeholder="Isı Koruması"/> -->
+            </div>
+
+            <!-- <button onClick="Calculate()">Hesapla</button> -->
+        
+            <div class="resistance">
+                <div class="left">
+                    <div id="line-color-1" class="line"></div>
+                </div>
+                <div class="middle">
+                    <div class="line-container">
+                        <div id="line-color-2" class="line"></div>
+                        <div id="line-color-3" class="line"></div>
+                    </div>
+                    <div class="line-container">
+                        <div id="line-multiplier" class="line"></div>
+                        <div id="line-tolerance" class="line"></div>
+                    </div>
+                </div>
+                <div class="right">
+                    <div id="line-temprature" class="line"></div>
+                </div>
+            </div>
+    
+            <h1 id="result">Sonuç</h1>
+        </div>
+
+        <script src="main.js"></script>
+    </body>
+</html>
